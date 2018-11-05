@@ -5,6 +5,11 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "scripts": {
+    "start": "hexo server -s -p 80",
+    "build": "hexo clean && hexo generate",
+    "deploy": "npm run build && hexo deploy"
+  },
   "dependencies": {
     "hexo": "^3.7.0",
     "hexo-generator-archive": "^0.1.5",
