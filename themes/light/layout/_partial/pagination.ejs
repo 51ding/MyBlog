@@ -1,0 +1,9 @@
+<nav id="pagination">
+  <% if (page.prev){ %>
+    <a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><%= __('上一页') %></a>
+  <% } %>
+  <% if (page.next){ %>
+    <a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('下一页') %></a>
+  <% } %>
+  <div class="clearfix"></div>
+</nav>
